@@ -1,15 +1,9 @@
-# Random Jokes Generator
-## Overview
-- This project is a Random Jokes Generator that provides users with a random joke. It's a lighthearted and fun way to add humor to your applications, websites, or projects.
+# Random Jokes Provider API
+
+Welcome to the Random Jokes Provider API! This API allows you to fetch random jokes for your entertainment. Whether you're looking to add humor to your application or just need a good laugh, this API has you covered.
 
 ## Features
 Random Jokes: Get a random joke with each API request.
-
-
-
-## Usage
-- Open index.html in your browser.
- - Click "Get Random Joke" to retrieve a random joke.
 
 
 ## Customization:
@@ -17,9 +11,49 @@ Random Jokes: Get a random joke with each API request.
  - Adjust the HTML, CSS, and JS files to fit your project's design and requirements.
  - Replace API URLs with the actual URLs of your backend server hosting the Random Jokes API.
 
-## Contributing:
+### Usage
+ - Open index.html in your browser.
+ - Click "Get Random Joke" to retrieve a random joke.
 
-Contributions are welcome! If you have an idea for improvement, open an issue or submit a pull request.
+1. Start the server:
+
+    ```bash
+    npm start
+    ```
+
+2. Access the API to get a random quote:
+
+    ```bash
+     curl -X GET "https://api.randomjokesprovider.com/jokes/random"
+    ```
+
+    Example response:
+
+    ```json
+    {
+     "joke": "Why did the chicken go to the seance? To talk to the other side!"
+    }
+    ```
+
+## API Endpoints
+
+- **Get a Random Quote:**
+  - Endpoint: `/jokes/random`
+  - Method: `GET`
+
+- **Get Quotes by Category:**
+  - Endpoint: `/jokes/category/{category}`
+  - Method: `GET`
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+Please follow our
+ ```bash
+    [https://github.com/Chandruvijayakumar/]
+ ```
+for more details
 
 
 
